@@ -21,8 +21,6 @@ var values = {
 };
 var jsonValues = JSON.stringify(values); // Conversión a JSON string.
 
-console.log(jsonValues);
-
 // Datos de conexión.
 const requestOptions = {
     hostname: params.hostname,
@@ -36,7 +34,9 @@ const requestOptions = {
     }
 }
 
-retryPattern(requestOptions);
+setTimeout(() => {
+    retryPattern(requestOptions);    
+}, 11000);
 
 function retryPattern(requestOptions, time = 10000) {
 
