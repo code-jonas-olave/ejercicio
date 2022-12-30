@@ -1,8 +1,6 @@
 <h1>Test SITRACK</h1>
 
-node.js
-
-<b>Versión</b> v8.10.0
+node.js - <b>Versión</b> v8.10.0
 
 <b>Instalación de módulos requeridos:</b>
 
