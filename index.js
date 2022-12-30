@@ -9,17 +9,19 @@ var values = {
     "loginCode":"98173", // Constante.
     "reportDate":new Date(),
     "reportType":"2",
-    "latitude":-32.123456,
-    "longitude":-68.123456,
+    "latitude":Math.floor(Math.random() * -100) + -1,
+    "longitude":Math.floor(Math.random() * -100) + -1,
     "gpsDop":1.0,
     "gpsSatellites":3,
     "heading":335,
-    "speed":45.0,
+    "speed":Math.floor(Math.random() * 100) + -1,
     "speedLabel":"GPS",
     "text":"Jonas Olave", // Constante.
     "textLabel":"TAG" // Constante.
 };
 var jsonValues = JSON.stringify(values); // Conversión a JSON string.
+
+console.log(jsonValues);
 
 // Datos de conexión.
 const requestOptions = {
